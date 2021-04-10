@@ -138,3 +138,63 @@ as a reminder string.split will turn it into an array based on spaces or based o
 .min
 .max
 .sum
+
+
+#LOOPS
+
+no, not fruit loops, data operations loops.
+
+If is a conditional that does a singluar action
+
+using a while: loop you can continue an action or ste of actions until some criteria is met
+
+while XYZ criteria
+
+do XYZ actions
+
+end
+
+so what you can do with that is use a counter method. Create a variable, assign it a numarical value typically 1 or 0 and then have it count up a certain number of times
+as it loops through whatever set of actions you want to take
+
+counter = 0
+
+while counter < 10
+  print "Josh, the counter is at  #{counter}"
+  
+  counter = counter + 1
+ end
+ 
+ this is going to loop through and add a counter +1 each time, then when the counter variable has surpassed 10 it will stop
+ 
+ alternatively you could use 
+ 
+ the .times method so and the action do
+ 
+ counter = 1
+ 
+ 10.times do
+  p mississippi.to_s + " Mississippi"
+  
+  counter = counter + 1
+ 
+ other methods
+ 
+ 1.upto(5)
+ 11.downto(3)
+ 10.step(1, -6)
+
+#BLOCK VARIABLES
+
+this is another way of looping
+
+first you have to have an array
+
+array = []
+
+array.push(1, 2, 3)
+
+array.each d |n|
+
+n = n + 10
+end
