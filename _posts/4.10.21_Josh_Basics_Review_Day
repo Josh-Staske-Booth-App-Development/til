@@ -43,3 +43,98 @@ rand(n) #calls a random number between 0 and n - 1
 #Date
 
 Ruby has a built in class for dates so you don't have to use any kind of string to store it!
+
+date.parse() lets you put dates in a written format and it should be able to figure out what you mean i.e. "October 3rd 2021"
+
+#Time
+
+There is also a class of Time
+
+Time.now
+
+#IF STATEMENTS AND CONDITIONALS
+
+if (insert arguments here)
+
+else
+
+do this thing
+
+end
+
+you can use else and you can use elsif to add more layers
+
+so
+
+if if blank is blank
+do this
+
+elsif blank is blank2
+do this
+
+elsif blank is blank3
+do this
+
+else
+if none of those are truthy then do this
+
+end
+
+DON'T FOR THE "END" AT THE END
+
+for comparisons
+
+< less than
+> greater than
+== equal to
+!= not equal to
+<= less than or equal to
+>= greater than or equal to
+
+and and or
+
+&& for and arguments (gotta satisfy both criteria)
+|| for or arguments (gotta only satisfy one or more )
+
+#ARRAY
+
+creating an array is as simple as names = Array.new
+
+push new values into the array with names.push("Josh")
+names.push("Megan")
+names.<<("Steve")
+<< is the same as push
+
+#you can also create arrays like this 
+
+names = ["Josh", "Megan", "Steve"]
+[] are arrays
+{} are hash tables with keys
+
+ARRAY METHODS
+.at is a method for arrays since they are numbered you can retrieve values with names.at(0)
+instead of .at you can also use shorthand .[] so names.[](2) and it will give you the 3rd value
+
+.first and .last give you the values you would expect so names.first and names.last
+
+.index gives it the number that value resides at within the array so names.index("Josh") = 0
+
+as a reminder string.split will turn it into an array based on spaces or based on the value you highlight
+
+"This is a string example".split = ["This", "is", "a", "string", "example"]
+
+"so,is,this".split(",") = ["so", "is", "this"] it will split based on the "," value because that is what was highlighted
+
+"Josh".split("") is splitting on nothing so it will give you ["J", "o", "s", "h"]
+
+.count will give you a total number of items in that array or you can call it on a specific item like list_of_names.count("Josh") and it will see how many times "Josh" is listed
+
+.include? does it include whatever value you give
+.exclude? same deal but exclusion
+.reverse
+.sort
+.shuffle
+.sample
+.min
+.max
+.sum
