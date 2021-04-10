@@ -1,1 +1,45 @@
 Going to review the basics and keep notes to myself here today.
+
+
+key string methods
+
+.upcase #goes all uppercase
+.downcase #goes all lower case
+.gsub("Thing you want to replace", "what you want to replace it with") #to replace things, use in combination with / / regularal expressions i.e. regex for advanced string filtering
+.length
+.reverse
+.swapcase
+.chomp #removes the /n new line character at the end
+.strip #removes any whitespace at the end
+.capitalize gives you back a string with just the first character capitalized
+
+.to_s #changes to a string
+.to_i #changes to an integer
+.to_f #changes to a float
+
+.split #splits a string into an array THIS IS AN IMPORTANT TOOL
+
+.include?()
+
+get a string from a user input by using gets, strip out whitespace on the end with gets.chomp
+
+interprolate a string with #{} inside the string to call variable or do math for example "One plus three is equal to #{1 + 3}"
+
+
+#INTEGERS
+
++ - * / % are all mathmatical operators on integers
+and int is and int not a float. They have a decimal at the end i.e. 2.2 instead of the integer 2
+
+.odd?
+.even?
+
+rand(n) #calls a random number between 0 and n - 1
+
+#FLOATS
+
+.round 
+
+#Date
+
+Ruby has a built in class for dates so you don't have to use any kind of string to store it!
