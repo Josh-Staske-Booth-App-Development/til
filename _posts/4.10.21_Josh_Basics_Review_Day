@@ -198,3 +198,98 @@ array.each d |n|
 
 n = n + 10
 end
+
+another alternative is to use "for"
+
+for fruit in fruits
+  p "The name of this fruit is #{fruit}"
+end
+
+#HASH
+
+very similar to an array but it is not indexed by a nubmer but instead has a key value paring
+
+another difference is that we have P{} instead of [].  Respect the curley brackets.
+
+we can use .store to add key value pairs to a hash for example
+
+fruits = { :banana => yellow, :apple => red, :orange => orange}
+fruits.store{ :pear => yellowish}
+
+.fetch is the equivalent of .at for an array.  
+you can use shorthand [] just like with arrays
+so you could use either
+fruits.fetch(:banana)
+
+or you could do fruits[:banana]
+
+.keys can be used on a hash table to get a list of keys
+
+fruits.keys will give you [:banana, :apple, :orange, :pear]
+
+#Symbols
+
+symbols are like strings
+
+"String"
+:symbol
+
+:symbols are used when developers need to label something.  They don't have a ton of methods like .reverse or .capitalize
+
+#CLASS
+
+you define classes with capital letters such a Fruits
+
+if you have a multi word class you have to do CamelCase so VeryImportantPerson
+
+with classes you can give them attributes using attr_accessor
+
+so for fruits we could do 
+
+class Fruits
+  attr_accessor :color
+  attr_accessor :shape
+  attr_accessor :flavor
+end
+
+you can then make a variable, define it's class, then assign the available attributes
+
+banana = Fruits.new
+banana.color = "yellow"
+banana.shape = "bendy cylinder"
+banana.flavor = "banana flavored"
+
+now we can call what values we have on that particular variable using the .attribute method
+
+p banana.color
+prints out "yellow"
+p banana.shape = "bendy cylinder"
+prints "bendy cylinder"
+
+p banana.class 
+prints Fruits with a capital F and no quotes because it is a class not a string as the attributes are
+
+#DEFINING INSTANCE METHODS
+
+firstly, you define a method by using 
+
+def INSERT_NAME_OF_METHOD
+  return put the code here you want to have happen
+end
+
+so, now that we know how to do that you can do it within a class so that each class can have it's own methods
+
+so we have something like this, notice the indentations and the double ending.  the first end is for the instance method, the second is for the class itself
+
+class FancyPants
+  attr_accessor :color
+  attr_accessor :fancy_details
+  
+  def show_off_fancy_pants
+    return "Look at my fancy pants! Can't you see the self.color + ' ' + self.fancy_details?"
+   end
+ end
+ 
+ #DEFINING CLASS METHODS
+ 
+ so class methods are a little different then instance methods
